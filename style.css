@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+section {
+  padding: 22px 16px 0px 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav .header-btn1 {
+  width: 140px;
+  height: 48px;
+  border-radius: 28px;
+  background-color: #13183f;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.header-btn2 {
+  width: 167px;
+  height: 56px;
+
+  background-color: #13183f;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 31.5px;
+}
+.hero-aarticles {
+  margin-top: 48px;
+  width: 100%;
+}
+
+.articles h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: #13183f;
+  margin-bottom: 26px;
+}
+
+.articles p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+  margin-bottom: 24px;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.hero-image .mobile-hero {
+  max-width: 100%;
+}
+
+.tablet-hero {
+  display: none;
+}
+.desktop-hero {
+  display: none;
+}
+
+aside {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.cards1 {
+  width: 343px;
+  height: 120px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.cards1 h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.cards {
+  position: relative;
+  width: 343px;
+  height: 259px;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 56px 28px 32px 28px;
+}
+
+.cards img {
+  position: absolute;
+  top: -24px;
+  left: 28px;
+}
+
+.cards h3 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  margin-bottom: 16px;
+}
+
+.cards p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+  margin-bottom: 24px;
+}
+
+.cards a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f74780;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: #13183f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+footer .footer-btn {
+  width: 140px;
+  height: 48px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/starter-code/assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top -5rem right -19rem;
+  }
+
+  aside {
+    margin-top: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+
+  aside .cards1 {
+    height: 259px;
+  }
+
+  section {
+    padding: 31px 39px 0 40px;
+  }
+  .hero-aarticles {
+    display: flex;
+  }
+  .mobile-hero {
+    display: none;
+  }
+  .articles {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./starter-code/assets/image-hero-desktop.png);
+    background-position: top -10rem right -20rem;
+  }
+
+  section {
+    padding: 29px 165px 0 165px;
+  }
+
+  .articles h1 {
+    font-size: 56px;
+    line-height: 71px;
+    margin-bottom: 29px;
+  }
+
+  .articles p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  aside {
+    margin-top: 256px;
+  }
+
+  .cards1 {
+    width: 350px;
+    min-height: 322px;
+    border-radius: 15px;
+    padding: 64px 32px 138px 32px;
+  }
+
+  .cards1 h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .cards {
+    width: 350px;
+    height: 322px;
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .cards h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+  .cards p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  a {
+    position: absolute;
+    top: 264px;
+    left: 32px;
+  }
+}
